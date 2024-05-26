@@ -1,0 +1,176 @@
+:root{
+    --primaryBG: rgb(39, 39, 128); 
+    --darkerBG: black;
+    --greyText:#191a17;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial;
+    background-color: grey;
+    color: aqua;
+    line-height: 1.5;
+    
+}
+
+main{
+    background-color: lightseagreen;
+    max-width: 980;
+    height: 600px;
+    margin: 50px 150px;
+}
+
+
+.container{
+    background-color: lightseagreen;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 300px;
+                 
+}
+
+
+.item{
+        /*background-color: steelblue;*/
+        color: #fff;
+        font-size: 16px;
+        padding: 0px;
+        /*border: skyblue 1px solid;*/
+        display: grid;
+        align-items: center;
+        justify-content: center;
+}
+
+.titleBar {
+       
+       display: flex;
+       justify-content: space-between;
+       font-size: 10px;
+       align-items: center;
+    
+     }
+
+.titleBar .left{
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        margin-left: 40px;
+        justify-content: space-around;
+        font-size: 20px;
+ }
+
+ .titleBar .left h2{
+    padding-left: 5px;
+    color: white;
+ }
+
+ .item:nth-of-type(1){
+    background-color: var(--darkerBG);
+    display: flex; 
+    justify-content: space-between; 
+    padding-left: 40px ;
+    
+}
+
+.item:nth-of-type(1) i{
+     padding-left: 200px ;
+     color: grey;
+}
+
+
+.item:nth-of-type(2){
+    background-color: lightseagreen;
+    grid-column: 2/span 2;
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    padding-bottom: 1px;
+   }
+
+   .item:nth-of-type(2) h2{
+    font-size: 40px;
+   }
+
+   .item:nth-of-type(2) p{
+    font-size: 12px;
+    max-width: 320px;
+   }
+
+   .item:nth-of-type(2) h3{
+    font-size: 20px;
+    width: 200px;
+    border: grey 1px 200px;
+    border-radius: 10px;
+    background-color: gray;
+    padding-left: 60px;
+    padding-top: 0px;
+    
+    
+   }
+
+
+.item:nth-of-type(3){
+    background-color: white;
+    height: 430px;
+  
+}
+
+
+.item:nth-of-type(3) .profileCard{
+    font-size: 8px;
+    background-color: white;
+    display: flex; 
+    color: grey;
+    padding: 10px;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.item:nth-of-type(3) p{
+    width: 280px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.item:nth-of-type(3) .profileCard h2{
+    padding-left: 100px;
+    padding-top: 5px;
+    color: grey;
+    border: grey 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    margin-left: 50px;
+    background-color: grey;
+    padding-bottom: 5px;
+}
+
+.chatBar{
+    width: 100px;
+    height: 50px;
+    font-size: 80px;
+    color: white;
+    position: fixed;
+    bottom: 120px;
+    right: 250px;
+    
+ }
+
+
+    
+    
+    
+
+
+
